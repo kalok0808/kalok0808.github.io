@@ -342,14 +342,33 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        justify-content: space-around;
+        padding-right: 0;
+    }
     .nav-mobile {
         display: flex;
         height: 64px;
     }
     .nav-mobile img {
-        width: 50px;
+        width: 35px;
     }
     .navbar {
         display: none;
+    }
+    .title {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .title .images {
+        width: 100%;
+    }
+    .title img {
+        width: 100%;
+        margin: 0;
+    }
+    .title .texts {
+        text-align: center;
     }
 }
