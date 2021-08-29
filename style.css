@@ -1,427 +1,123 @@
-        body {
-            background-color: white;
-            height: 64px;
-            font-family: 'Ubuntu', sans-serif;
-        }
-        
-        .navbar {
-            padding-left: 24px;
-            padding-right: 24px;
-            height: 64px;
-            display: flex;
-            align-items: center;
-        }
-        
-        .navbar .logo {
-            display: flex;
-            text-align: left;
-            height: 32px;
-        }
-        
-        .navbar .logotext strong {
-            height: 32px;
-            color: black;
-        }
-        
-        .navbar .logotext span {
-            height: 32px;
-            color: gray;
-            opacity: 0.7;
-        }
-        
-        .navbar .textlink {
-            flex: 1;
-            display: flex;
-            justify-content: flex-end;
-        }
-        
-        .navbar .textlink a {
-            margin-left: 16px;
-            color: black;
-        }
-        
-        .title {
-            display: flex;
-            background-color: rgb(221, 216, 216);
-        }
-        
-        .title .images img {
-            width: 100%;
-        }
-        
-        .title .images {
-            width: 60%;
-            margin: 32px 24px;
-        }
-        
-        .title .texts {
-            width: 40%;
-            margin-left: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-right: 150px;
-        }
-        
-        .title .texts h1 {
-            color: rgb(71, 71, 71);
-            margin-bottom: 30px;
-        }
-        
-        .title .texts h3 {
-            color: rgb(71, 71, 71);
-            margin-bottom: 30px;
-        }
-        
-        .title .texts button {
-            background-color: rgb(71, 71, 71);
-            color: white;
-            padding: 8px 0;
-        }
-        
-        .middle {
-            background-color: rgb(245, 243, 243);
-            display: flex;
-        }
-        
-        .middle .middle-left {
-            text-align: left;
-            width: 60%;
-            margin: 32px 24px;
-        }
-        
-        .middle-image {
-            width: 100%;
-            margin-bottom: 32px;
-        }
-        
-        .middle-image img {
-            width: 100%;
-        }
-        
-        .middle-text h3 {
-            margin-bottom: 24px;
-        }
-        
-        .middle-text p {
-            color: rgb(26, 25, 25);
-            font-size: 10px;
-            margin-bottom: 24px;
-        }
-        
-        .middle-text p:nth-child(2) {
-            color: rgb(80, 79, 79);
-            font-size: 15px;
-        }
-        
-        .middle .middle-right {
-            width: 40%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            border-left: rgb(221, 216, 216) 1px solid;
-        }
-        
-        .right img {
-            width: 35%;
-            margin: 16px;
-        }
-        
-        .middle-right .right {
-            display: flex;
-        }
-        
-        .text-right {
-            width: 65%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        
-        .text-right h4 {
-            text-align: left;
-            margin-bottom: 8px;
-        }
-        
-        .text-right p {
-            text-align: left;
-            margin-bottom: 8px;
-            color: rgb(83, 83, 83);
-        }
-        
-        .text-right a {
-            text-align: left;
-            margin-bottom: 8px;
-        }
-        
-        .cards {
-            display: flex;
-            flex-direction: column;
-            padding-top: 32px;
-            background-color: rgb(224, 224, 224);
-        }
-        
-        .card-group {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 32px 72px;
-        }
-        
-        .cards h2 {
-            text-align: center;
-            color: rgb(63, 62, 62);
-        }
-        
-        .card-Software {
-            margin-right: 32px;
-            margin-bottom: 32px;
-        }
-        
-        .card-Computer {
-            margin-right: 32px;
-            margin-bottom: 32px;
-        }
-        
-        .card-Design {
-            margin-right: 0;
-            margin-bottom: 32px;
-        }
-        
-        .card-Data {
-            margin-right: 32px;
-            margin-bottom: 32px;
-        }
-        
-        .card-Business {
-            margin-right: 32px;
-            margin-bottom: 32px;
-        }
-        
-        .card-Marketing {
-            margin-right: 0px;
-            margin-bottom: 32px;
-        }
-        
-        .card-image {
-            width: 350px;
-            height: 200px;
-        }
-        
-        .card-image img {
-            width: 350px;
-            height: 200px;
-        }
-        
-        .card-text {
-            width: 350px;
-            height: 160px;
-            background-color: white;
-            padding: 16px;
-        }
-        
-        .card-text h4 {
-            font-weight: bold;
-            color: rgb(53, 52, 52);
-            margin-bottom: 8px;
-        }
-        
-        .card-text p {
-            color: rgb(151, 151, 151);
-            margin-bottom: 8px;
-        }
-        
-        .videos {
-            background-color: rgb(248, 244, 244);
-            padding: 32px 72px;
-            border-bottom: rgb(221, 216, 216) 1px solid;
-        }
-        
-        .videos h2 {
-            text-align: center;
-            font-weight: bold;
-            color: rgb(63, 62, 62);
-            margin-bottom: 32px;
-        }
-        
-        .video-part {
-            display: flex;
-        }
-        
-        .video {
-            width: 60%;
-        }
-        
-        .video video {
-            width: 100%;
-            margin-bottom: 24px;
-        }
-        
-        .video-part .video h1 {
-            color: rgb(77, 77, 77);
-            margin-bottom: 8px;
-        }
-        
-        .video-part .video p {
-            color: rgb(168, 167, 167);
-            margin-bottom: 32px;
-        }
-        
-        .video-link {
-            width: 40%;
-            display: flex;
-            flex-direction: column;
-            margin-left: 24px;
-        }
-        
-        .vedio-image {
-            width: 35%;
-            margin: 16px;
-        }
-        
-        .vedio-image img {
-            width: 100%;
-        }
-        
-        .one-part {
-            display: flex;
-            background-color: rgb(221, 221, 221);
-        }
-        
-        .vedio-text {
-            width: 65%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        
-        .vedio-text h4 {
-            margin-bottom: 8px;
-            color: rgb(78, 78, 78);
-        }
-        
-        .vedio-text p {
-            margin-bottom: 8px;
-            color: rgb(165, 165, 165);
-        }
-        
-        .footer {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        
-        .footer .left {
-            display: flex;
-            text-align: left;
-        }
-        
-        .footer .right {
-            margin-right: 24px;
-            display: flex;
-            text-align: right;
-        }
-        
-        .footer p {
-            margin: 16px 24px;
-            color: gray;
-        }
-        
-        .footer a {
-            color: gray;
-            margin-left: 8px;
-        }
-        
-        .nav-mobile {
-            display: flex;
-            justify-content: space-around;
-            display: none;
-        }
-        
-        .right-mobile {
-            display: flex;
-            justify-content: space-around;
-        }
-        
-        .right-mobile img {
-            display: none;
-        }
-        
-        @media screen and (max-width: 768px) {
-            body {
-                justify-content: space-around;
-                padding-right: 0;
-            }
-            .nav-mobile {
-                display: flex;
-                height: 64px;
-            }
-            .nav-mobile img {
-                width: 35px;
-            }
-            .navbar {
-                display: none;
-            }
-            .title {
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-            }
-            .title .images {
-                width: 100%;
-                margin: 0 0;
-            }
-            .title img {
-                width: 100%;
-            }
-            .title .texts {
-                text-align: center;
-                width: 100%;
-                padding: 32px 16px;
-            }
-            .title .texts h1 {
-                text-align: left;
-                margin-bottom: 32px;
-                color: rgb(68, 68, 68);
-            }
-            .title .texts h3 {
-                text-align: left;
-                margin-bottom: 32px;
-                color: rgb(112, 112, 112);
-            }
-            .title .texts button {
-                margin-bottom: 32px;
-                color: rgb(68, 68, 68);
-                background-color: rgb(175, 173, 173);
-                font-weight: bold;
-                color: white;
-            }
-            .middle-left {
-                display: none;
-            }
-            .middle-right .right img {
-                display: none;
-            }
-            .right-mobile {
-                width: 100%;
-                padding: 16px;
-                display: flex;
-                flex-direction: column;
-            }
-            .right-mobile img {
-                display: flex;
-                width: 100%;
-            }
-            .middle .middle-right {
-                width: 100%;
-                margin-bottom: 32px;
-            }
-            .middle-right .right {
-                width: 100%;
-                padding: 16px;
-            }
-            .text-right {
-                width: 100%;
-                margin-bottom: 64px;
-            }
-        }
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Vollkorn:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.showcase{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    z-index: 2;
+
+}
+.logo{
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.toggle.active
+{
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+.menu{
+}
+.showcase header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.toggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url(https://i.ibb.co/HrfVRcx/menu.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+.showcase video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    mix-blend-mode: overlay;
+}
+.text{
+    position: relative;
+    z-index: 10;
+}
+.text h2{
+    font-family: 'Vollkorn', serif;
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+.text p{
+    font-family: 'Cookie', cursive;
+    font-size: 2.5em;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+.text a{
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(90deg,rgba(154, 62, 182, 0.308),rgb(173, 77, 157));
+}
+
+span{
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}
+@keyframes animate{
+    0%{
+        width: 0px;
+        height: 0px;
+    }
+    100%{
+        width: 50px;
+        height: 50px;
+    }
+}
