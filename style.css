@@ -74,6 +74,7 @@
 .text{
     position: relative;
     z-index: 10;
+    
 }
 .text h2{
     font-family: 'Vollkorn', serif;
@@ -81,6 +82,7 @@
     font-weight: 700;
     line-height: 1em;
     text-transform: uppercase;
+    animation: fadeIn 10s;
 }
 .text p{
     font-family: 'Cookie', cursive;
@@ -88,6 +90,17 @@
     margin: 20px 0;
     font-weight: 400;
     max-width: 700px;
+    animation: fadeIn 10s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 .text a{
     display: inline-block;
