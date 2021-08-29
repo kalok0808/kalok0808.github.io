@@ -18,6 +18,11 @@
     z-index: 2;
 
 }
+.showcase.active
+{
+  right: 300px;
+
+}
 .logo{
     text-transform: uppercase;
     cursor: pointer;
@@ -31,6 +36,28 @@
   cursor: pointer;
 }
 .menu{
+    background: rgba(102, 37, 93, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu ul{
+    position: relative;
+    list-style: none;
+    line-height: 80px;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+}
+.menu ul li a:hover{
+    color: black;
 }
 .showcase header{
     position: absolute;
