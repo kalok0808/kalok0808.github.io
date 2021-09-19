@@ -119,7 +119,7 @@
   font-weight: 700;
   line-height: 1em;
   text-transform: uppercase;
-  animation: fadeIn 10s;
+  animation: fadeIn 5s;
 }
 .text p {
   font-family: "Cookie", cursive;
@@ -127,7 +127,7 @@
   margin: 20px 0;
   font-weight: 400;
   max-width: 700px;
-  animation: fadeIn 10s;
+  animation: fadeIn 5s;
 }
 
 @keyframes fadeIn {
