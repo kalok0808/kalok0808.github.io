@@ -212,21 +212,23 @@ body {
     opacity: 0.5;
   }
   .aboutMeText h3 {
-    position: relative;
+    position: absolute;
     font-size: 30px;
     color: rgb(124 92 92);
     object-fit: cover;
-    top: -3rem;
-    left: -20rem;
+    top: 43rem;
+    left: 1rem;
+    width: 95%;
   }
   .aboutMeH4 {
-    width: 120%;
-    position: relative;
-    right: 7rem;
+    width: 100%;
+    position: absolute;
+    right: -1rem;
+    top: 68rem;
   }
 
   .aboutMeH4 h4 {
-    width: 100%;
+    width: 90%;
     font-size: 10px;
     color: rgb(74 74 74);
     text-align: right;
