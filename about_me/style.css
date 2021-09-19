@@ -93,7 +93,9 @@ body {
   font-size: 60px;
   color: rgb(124 92 92);
   object-fit: cover;
+  animation: fadeIn 3s;
 }
+
 .aboutMeH4 {
   width: 70%;
 }
@@ -103,6 +105,17 @@ body {
   color: rgb(74 74 74);
   text-align: right;
   object-fit: cover;
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 .aboutMe p {
   writing-mode: vertical-lr;
@@ -204,7 +217,14 @@ body {
   height: 360px;
   object-fit: cover;
   position: relative;
-  box-shadow: 20px 10px 10px rgb(248 235 238);
+}
+.experiencetext img:hover {
+  border-radius: 999px 999px 0 0;
+  width: 275px;
+  height: 360px;
+  object-fit: cover;
+  position: relative;
+  box-shadow: 20px 10px 10px rgb(195 141 141);
 }
 .form {
   width: auto;
@@ -221,6 +241,7 @@ body {
     rgb(245, 194, 228),
     #dfb0f1
   );
+  opacity: 80%;
 }
 .form p {
   font-family: "EB Garamond", serif;
