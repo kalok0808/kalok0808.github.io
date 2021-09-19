@@ -251,7 +251,7 @@ body {
   flex: 2;
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 20px;
 }
 input {
   background: none;
@@ -309,6 +309,14 @@ button {
   margin-right: 30px;
 }
 @media screen and (max-width: 950px) {
+  .navbar a {
+    color: white;
+    margin: 5px 20px 0 20px;
+  }
+  .navbar a:hover {
+    color: rgb(78, 78, 78);
+    margin: 5px 20px 0 20px;
+  }
   .aboutMe img {
     border-radius: 999px 0 0 0;
     padding: 20px;
