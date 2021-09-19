@@ -240,4 +240,7 @@ body {
     text-align: right;
     object-fit: cover;
   }
+  .skillsImg {
+    padding: 0 70px;
+  }
 }
