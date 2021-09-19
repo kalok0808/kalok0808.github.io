@@ -243,4 +243,7 @@ body {
   .skillsImg {
     padding: 0 70px;
   }
+  .skillsImg {
+    left: -1rem;
+  }
 }
