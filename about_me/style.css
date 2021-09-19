@@ -24,7 +24,6 @@ body {
   z-index: 20;
   color: white;
   font-size: 20px;
-  margin-right: 10px;
 }
 .navbar a {
   color: white;
@@ -87,7 +86,7 @@ body {
   padding: 15px;
 }
 .aboutMeText h3 {
-  font-size: 53px;
+  font-size: 60px;
   color: rgb(124 92 92);
   object-fit: cover;
 }
@@ -136,6 +135,7 @@ body {
   letter-spacing: 5px;
   color: black;
   font-weight: bold;
+  left: 5px;
 }
 .skillsImg {
   display: flex;
@@ -192,6 +192,7 @@ body {
   padding: 0 40px;
   font-family: "EB Garamond", serif;
   margin-top: 20px;
+  color: #835392;
 }
 .experiencetext img {
   border-radius: 999px 999px 0 0;
@@ -201,6 +202,7 @@ body {
   position: relative;
   box-shadow: 20px 10px 10px rgb(248 235 238);
 }
+
 @media screen and (max-width: 950px) {
   .aboutMe img {
     border-radius: 999px 0 0 0;
@@ -209,11 +211,11 @@ body {
     height: 600px;
     object-fit: cover;
     position: relative;
-    opacity: 0.5;
+    opacity: 0.2;
   }
   .aboutMeText h3 {
     position: absolute;
-    font-size: 30px;
+    font-size: 33px;
     color: rgb(124 92 92);
     object-fit: cover;
     top: 43rem;
@@ -229,7 +231,7 @@ body {
 
   .aboutMeH4 h4 {
     width: 90%;
-    font-size: 10px;
+    font-size: 20px;
     color: rgb(74 74 74);
     text-align: right;
     object-fit: cover;
