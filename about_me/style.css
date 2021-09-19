@@ -29,6 +29,10 @@ body {
   color: white;
   margin: 0 30px 0 30px;
 }
+.navbar a:hover {
+  color: rgb(78, 78, 78);
+  margin: 0 30px 0 30px;
+}
 .aboutBackground {
   background-image: linear-gradient(
     to top right,
@@ -136,6 +140,7 @@ body {
   color: black;
   font-weight: bold;
   left: 5px;
+  top: 81rem;
 }
 .skillsImg {
   display: flex;
