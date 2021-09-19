@@ -244,6 +244,7 @@ body {
     padding: 0 70px;
   }
   .skills h3 {
-    left: -1rem;
+    left: 0rem;
+    font-size: 20px;
   }
 }
