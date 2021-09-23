@@ -73,7 +73,7 @@ body {
 .aboutMe {
   display: flex;
   align-items: center;
-  height: 700px;
+  height: auto;
 }
 .aboutMeImg {
   flex: 1;
@@ -136,7 +136,7 @@ body {
 }
 /*Skills*/
 .skills {
-  height: 450px;
+  height: auto;
   background-color: rgb(255, 233, 233);
 }
 
@@ -253,10 +253,11 @@ body {
   flex-direction: column;
   padding: 20px;
 }
+
 input {
   background: none;
   margin-bottom: 1rem;
-  width: 20rem;
+  width: auto;
   height: 30px;
   border-radius: 6px;
 }
@@ -264,6 +265,7 @@ textarea {
   background: none;
   margin-bottom: 1rem;
   border-radius: 6px;
+  width: auto;
 }
 button {
   background: none;
