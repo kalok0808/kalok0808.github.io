@@ -211,20 +211,26 @@ body {
   margin-top: 20px;
   color: #835392;
 }
-.experiencetext img {
+.experienceImg {
   border-radius: 999px 999px 0 0;
   width: 275px;
   height: 360px;
-  object-fit: cover;
-  position: relative;
-}
-.experiencetext img:hover {
-  border-radius: 999px 999px 0 0;
-  width: 275px;
-  height: 360px;
-  object-fit: cover;
+  overflow: hidden;
   position: relative;
   box-shadow: 20px 10px 10px rgb(195 141 141);
+}
+.experienceImg:hover {
+  box-shadow: 20px 10px 10px white;
+}
+.experiencetext img {
+  width: 100%;
+  height: 100%;
+  transition: 0.2s linear;
+}
+.experiencetext img:hover {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.1);
 }
 .form {
   width: auto;
