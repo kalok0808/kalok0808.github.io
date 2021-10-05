@@ -127,7 +127,7 @@
   margin: 20px 0;
   font-weight: 400;
   max-width: 700px;
-  animation: fadeIn 5s;
+  animation: fadeIn 8s;
 }
 
 @keyframes fadeIn {
