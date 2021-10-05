@@ -7,7 +7,7 @@ menuToggle.addEventListener("click", () => {
 });
 
 let type = new Typed(".typing-text", {
-  strings: ["happy", "sadness", "relax"],
+  strings: ["meaningful", "sadness", "special"],
   typeSpeed: 120,
   loop: true,
 });
