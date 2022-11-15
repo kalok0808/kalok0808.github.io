@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Square+Peg&display=swap');
+
 @import url("https://fonts.googleapis.com/css2?family=Carattere&family=EB+Garamond&family=Ephesis&family=Explora&family=Gideon+Roman&family=Grey+Qo&family=Italianno&family=Yanone+Kaffeesatz:wght@200&display=swap");
 /*font-family: 'Carattere', cursive;
 font-family: 'EB Garamond', serif;
@@ -7,9 +9,11 @@ font-family: 'Gideon Roman', cursive;
 font-family: 'Grey Qo', cursive;
 font-family: 'Italianno', cursive;
 font-family: 'Yanone Kaffeesatz', sans-serif;*/
-* {
+ * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Patrick Hand', cursive;
 }
 body {
   width: 100%;
@@ -90,20 +94,117 @@ body {
   height: 550px;
   justify-content: space-between;
   padding: 15px;
+  align-items: end;
 }
 .aboutMeText h3 {
-  font-size: 60px;
+  font-size: 4vw;
   color: rgb(124 92 92);
   object-fit: cover;
   animation: fadeIn 3s;
 }
+.sci {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
+.sci li {
+  list-style: none;
+}
+
+.sci li::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 3vh);
+  font-size: 10vw;
+  pointer-events: none;
+  font-weight: 700;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10000;
+}
+
+.sci li:hover::before {
+  opacity: 0.1;
+  transform: translate(-50%, 5vh);
+}
+
+.sci li a {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  /* background: #ffe8e9; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 20px;
+  font-size: 5em;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  /* box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1); */
+}
+
+.sci li a:hover.html i{
+  color: #f49784;
+}
+
+.sci li a:hover.css i{
+  color: #1d5fa9;
+}
+
+.sci li a:hover.javascript i{
+  color: #ffef87;
+}
+
+.sci li a:hover.react i{
+  color: #5fd3f3;
+}
+
+.sci li a:hover.flutter img{
+  color: #5cc3ef;
+}
+
+.sci li a:hover.php i{
+  color: #cfadfa;
+}
+.sci li a:hover{
+  color: #ffe8e9;
+}
+
+.sci li a i {
+  transition: 0.25s;
+  pointer-events: none;
+}
+.sci li a img {
+  transition: 0.25s;
+  pointer-events: none;
+}
+
+.sci li a:hover i {
+  color: #fff;
+  transform: scale(1.5);
+}
+
+.sci li a:hover img {
+  color: #fff;
+  transform: scale(1.5);
+}
 .aboutMeH4 {
   width: 70%;
 }
 .aboutMeH4 h4 {
   width: 100%;
-  font-size: 18px;
+  font-size: 1.7vw;
   color: rgb(74 74 74);
   text-align: right;
   object-fit: cover;
@@ -122,7 +223,7 @@ body {
 .aboutMe p {
   writing-mode: vertical-lr;
   text-orientation: mixed;
-  font-size: 25px;
+  font-size: 2.8vw;
   font-family: "Explora", cursive;
   font-weight: bold;
   color: rgb(51, 51, 51);
@@ -139,7 +240,8 @@ body {
 /*Skills*/
 .skills {
   height: 500px;
-  background-color: rgb(255, 233, 233);
+  /* background-color: rgb(255, 233, 233); */
+  position: relative;
 }
 
 .skills h3 {
@@ -148,19 +250,20 @@ body {
   writing-mode: vertical-lr;
   text-orientation: mixed;
   transform: rotate(-180deg);
-  height: 60%;
+  height: 100%;
   text-align: center;
-  font-size: 25px;
+  font-size: 2.5vw;
   letter-spacing: 5px;
   color: black;
   font-weight: bold;
-  top: 82rem;
+  top: 0;
+
 }
 .skillsImg {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 50px;
+  padding: 0 8vw;
   height: 100%;
   flex-wrap: wrap;
 }
@@ -174,17 +277,17 @@ body {
 }
 .experience {
   height: auto;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to bottom,
     rgb(255, 233, 233),
     rgb(240, 200, 220),
     rgb(250, 203, 203),
     rgb(247, 201, 235),
     rgb(201, 165, 218)
-  );
+  ); */
 }
 .experience p {
-  font-size: 30px;
+  font-size: 3vw;
   font-family: "Explora", cursive;
   text-align: center;
   font-weight: bold;
@@ -196,6 +299,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 0 4vw;
 }
 .experiencetext {
   flex: 1;
@@ -207,16 +311,17 @@ body {
   font-size: 15px;
 }
 .extext {
-  width: 250px;
-  padding: 15px 40px;
+  width: 300px;
+  /* padding: 15px 40px; */
   font-family: "EB Garamond", serif;
   margin-top: 20px;
-  color: #835392;
+  color: #8b7592;
+  height: 100%;
 }
 .experienceImg {
   border-radius: 999px 999px 0 0;
   width: 275px;
-  height: 360px;
+  height: 1000px;
   overflow: hidden;
   position: relative;
   box-shadow: 20px 10px 10px rgb(195 141 141);
@@ -240,16 +345,17 @@ body {
   align-items: center;
   justify-content: center;
   height: auto;
-  background-color: #d1c1db;
+  /* background-color: #d1c1db; */
   flex-wrap: wrap;
   padding: 30px;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to bottom,
     rgb(250, 203, 203),
     rgb(245, 194, 228),
     #dfb0f1
-  );
+  ); */
   opacity: 80%;
+  flex-direction: column;
 }
 .form p {
   font-family: "EB Garamond", serif;
@@ -287,7 +393,7 @@ button {
   text-align: center;
 }
 .formP p {
-  font-size: 90px;
+  font-size: 60px;
 }
 .contactWay {
   flex: 1;
@@ -328,6 +434,11 @@ button {
     color: rgb(78, 78, 78);
     margin: 5px 20px 0 20px;
   }
+  .skills {
+    height: 100%;
+    /* background-color: rgb(255, 233, 233); */
+    position: relative;
+}
   .aboutMe img {
     border-radius: 999px 0 0 0;
     padding: 20px;
@@ -346,22 +457,41 @@ button {
     left: 1rem;
     width: 95%;
   }
+
+  .sci li::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    font-size: 10vw;
+    pointer-events: none;
+    font-weight: 700;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10000;
+  }
+  .sci li:hover::before {
+    opacity: 0.1;
+    transform: translate(-50%, -50%);
+  }
   .aboutMeH4 {
     width: 80%;
     position: absolute;
     right: 2rem;
     top: 68rem;
+    margin: -10vw 0 0 0;
   }
 
   .aboutMeH4 h4 {
     width: 90%;
-    font-size: 19px;
+    font-size: 3vw;
     color: rgb(74 74 74);
     text-align: right;
     object-fit: cover;
   }
   .skillsImg {
-    padding: 0 70px;
+    padding: 10vw 70px;
   }
   .skills h3 {
     left: 0rem;

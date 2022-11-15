@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Square+Peg&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Patrick Hand', cursive;
+        }
+
+        .socialMedia {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #ffe8e9;
+        }
+
+        .sci {
+            position: relative;
+            display: flex;
+        }
+
+        .sci li {
+            list-style: none;
+        }
+
+        .sci li::before {
+            content: attr(data-text);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 3vh);
+            font-size: 14vw;
+            pointer-events: none;
+            font-weight: 700;
+            transition: 0.5s;
+            opacity: 0;
+            color: white;
+        }
+
+        .sci li:hover::before {
+            opacity: 0.3;
+            transform: translate(-50%, 5vh);
+            color: white;
+        }
+
+        .sci li a {
+            position: relative;
+            display: inline-block;
+            width: 120px;
+            height: 120px;
+            background: #ffe8e9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            border-radius: 10px;
+            text-decoration: none;
+            margin: 20px;
+            font-size: 4em;
+            transform-style: preserve-3d;
+            perspective: 500px;
+            /* box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1); */
+        }
+
+        .sci li a:hover.html {
+            background: #f49784;
+        }
+
+        .sci li a:hover.css {
+            background: #1d5fa9;
+        }
+
+        .sci li a:hover.javascript {
+            background: #e1d060;
+        }
+
+        .sci li a:hover.react {
+            background: #5fd3f3;
+        }
+
+        .sci li a:hover.flutter {
+            background: #5cc3ef;
+        }
+
+        .sci li a:hover.php {
+            background: #cfadfa;
+        }
+
+        .sci li a i {
+            transition: 0.25s;
+            pointer-events: none;
+        }
+
+        .sci li a img {
+            transition: 0.25s;
+            pointer-events: none;
+        }
+
+        .sci li a:hover i {
+            color: #fff;
+            transform: scale(1.5);
+        }
+
+        .sci li a:hover img {
+            color: #fff;
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="socialMedia">
+        <ul class="sci">
+            <li data-text="html" data-color="#f49784">
+                <a href="#" class="html"><i class="fa-brands fa-html5"></i></a>
+            </li>
+            <li data-text="css" data-color="#1d5fa9">
+                <a href="#" class="css"><i class="fa-brands fa-css3-alt"></i></a>
+            </li>
+            <li data-text="javascript" data-color="#e1d060">
+                <a href="#" class="javascript"><i class="fa-brands fa-square-js"></i></a>
+            </li>
+            <li data-text="react" data-color="#5fd3f3">
+                <a href="#" class="react"><i class="fa-brands fa-react"></i></a>
+            </li>
+            <li data-text="flutter" data-color="#5cc3ef">
+                <a href="#" class="flutter"> <img style="width: 56%;" class="aboutImg" src="img/flutter.png"
+                        alt="" /></a>
+            </li>
+            <li data-text="php" data-color="#cfadfa">
+                <a href="#" class="php"><i class="fa-brands fa-php"></i></a>
+            </li>
+        </ul>
+    </section>
+    <script src="vanilla.js">
+
+    </script>
+    <script>
+        let list = document.querySelectorAll('.sci li');
+        // let bg = document.querySelector('.socialMedia');
+        list.forEach(elements => {
+            console.log(elements)
+            elements.addEventListener('mouseenter', function (event) {
+                console.log(event.target.getAttribute('data-color'))
+                let colors = event.target.getAttribute('data-color');
+                $('.socialMedia').css("background",
+                    colors);
+            })
+            // console.log(event.target.getAttribute('data-color'))
+            // console
+
+            // bg.style.backgroundColor = color;
+        })
+
+        VanillaTilt.init(document.querySelectorAll(".sci li a"), {
+            max: 25,
+            speed: 400,
+            glare: true, // if it should have a "glare" effect
+            "max-glare": 1,
+        });
+    </script>
+
+</body>
+
+</html>
